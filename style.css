@@ -1,0 +1,143 @@
+@font-face {
+    font-family: colgent;
+    src: url('font_1/Colgent.ttf');
+}
+
+body
+{
+    background-color: black;
+}
+
+.inity
+{
+    background-image: url('https://i.pinimg.com/564x/e5/65/c7/e565c7b998825c03518231cb0125e9a0.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30em;
+}
+.sobreamento
+{
+    background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.19), black);
+    text-align: center;
+    height: 30em;
+}
+.transition
+{
+    position: relative;
+    top: -3em;
+    height: 3em;
+    background-image: linear-gradient(to bottom, transparent, black);
+}
+.text_title
+{
+    font-family: colgent;
+    font-size: 255%;
+    position: relative;
+    top: 4.5em;
+    color: white;
+}
+.parag_title
+{
+    color: #ffe4e4;
+    position: relative;
+    top: 12em;
+}
+
+.text1
+{
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.text1 h3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.text1 p{
+    color: #ffe4e4;
+    font-size: small;
+}
+.music
+{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 5em;
+}
+
+.banner
+{
+    background-color: white;
+    
+    width: 70%;
+    height: 15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: -webkit-center;
+    transition: all 0.1s linear;
+    border: 0.7px solid white;
+    
+}
+
+.banner:hover
+{
+    scale: 1.1;
+}
+.banner:active
+{
+    scale: 0.95;
+}
+
+.banner span
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 5em;
+    width: 80%;
+    display: block;
+    font-size: 160%;
+}
+
+
+#jazz
+{
+    background-image: url('https://i.pinimg.com/564x/14/21/20/142120ac45dc60cf45395da12928dc74.jpg');
+    
+}
+
+#rock
+{
+    background-image: url('https://i.pinimg.com/564x/ff/6f/7b/ff6f7bb8317c5f62c3552d41f386cfe0.jpg');
+}
+
+.banner .sombra
+{
+    background-color: rgba(0, 0, 0, 0.19);
+    height: 20em;
+}
+
+#pop
+{
+    background-image: url('https://i.pinimg.com/564x/e2/18/6d/e2186d834773a8de6f3ce7b63eb47636.jpg');
+}
+
+.text2
+{
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.text2 h3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.text2 p{
+    color: #ffe4e4;
+    font-size: small;
+}
+

@@ -1,0 +1,125 @@
+body
+{
+    background-image: url('https://i.pinimg.com/564x/66/a5/8c/66a58c0d6d13a7eceed14ad2c15a9b8f.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+    height: max-content;
+    width: 98.6%;
+}
+.inity
+{
+    display: grid;
+    grid-template-columns: 50% 60%;
+    text-align: -webkit-center;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(219, 218, 218);
+    padding: 1em;
+}
+.inity h1
+{
+    font-size: 400%;
+}
+.inity .imagem_principal
+{
+    width: 10rem;
+}
+
+p{
+    color: #ffe4e4d7;
+}
+
+h3
+{
+    color: white;
+}
+
+.inity .imagem_principal img
+{
+    width: 100%;
+    height: 10em;
+    border: 0.6px solid black;
+}
+.body
+{   
+    backdrop-filter: blur(5px) brightness(50%);
+    -webkit-backdrop-filter: blur(5px) brightness(50%);
+    height: 100%;
+}
+
+.music
+{
+    margin-top: 3em;
+    text-align: -webkit-center;
+}
+.music .item
+{
+    height: 5em;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 7em 60%;
+    margin-bottom: 2em;
+    background-color: rgba(255, 255, 255, 0.15);
+    justify-items: center;
+    transition: all 0.1s linear;
+}
+
+.music .item:hover
+{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.music .item:active
+{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.music .item img
+{
+    width: 5em;
+    height: 5em;
+}
+#m5{
+    margin-bottom: 4em;
+}
+
+.player
+{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 4.5em;
+    width: 98.6%;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.ico
+{
+    width: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+input
+{
+    appearance: none;
+    background-color: black;
+    height: 0.5em;
+    border: 0;
+    border-radius: 50px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+input::-webkit-slider-thumb
+{
+    appearance: none;
+    border-radius: 50px;
+    background-color: rgb(107, 105, 105);
+    width: 1em;
+    height: 1em;
+    border: 0;
+}

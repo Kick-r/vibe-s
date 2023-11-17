@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/vibe's.jpeg" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: bebas;
+            src: url('font/BebasNeue-Regular.ttf');
+        }
+
+        body
+        {
+            background-color: #ffffff;
+            text-align: -webkit-center;
+        }
+
+        .inter *
+        {
+            text-align: center;
+            width: 20em;
+        }
+
+        h1
+        {
+            margin: 0;
+            background-color: #ff007a;
+            color: white;
+            font-family: bebas;
+        }
+
+        .card
+        {
+            width: 20em;
+            height: 10em;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.502);
+            padding-bottom: 2em;
+            text-align: center;
+            top: 14em;
+            border: 1px solid rgb(209, 208, 208);
+            border-radius: 15px;
+        }
+        button
+        {
+            background-color: #d6d6d6;
+            color: rgb(119, 119, 119);
+        }
+
+        .card *
+        {
+            margin-bottom: 1em;
+        }
+
+        input:focus::placeholder
+        {
+            background-color: #ff007a;
+            color: white;
+        }
+        
+        input:focus
+        {
+            background-color: #ff007a;
+            color: white;
+        }
+        input:invalid
+        {
+            color: #ff007a;
+            background-color: white;
+        }
+
+
+        .bola1
+        {
+            width: 0;
+            height: 0;
+            border-left: 90px solid transparent;
+            border-right: 60px solid transparent;
+            border-bottom: 120px solid #ff007a;
+            top: 25em;
+            left: 1em;
+            animation: cima 10s cubic-bezier(1, 0, 0, 1) infinite;
+            position: absolute;
+            scale: 140%;
+        }
+
+        .bola2
+        {
+            height: 10em;
+            width: 10em;
+            background-color: #ff007a;
+            border-radius: 200px;
+            right: 2em;
+            top: 7em;
+            position: absolute;
+            animation: circular 10s cubic-bezier(0.5, 0, 0, 1) infinite;
+        }
+        
+        @keyframes cima {
+            0%
+            {
+                top: 25em;
+                left: 1em;
+            }
+
+            50%
+            {
+                top: 15em;
+                left: 5em;
+            }
+
+            100%
+            {
+                top: 25em;
+                left: 1em;
+            }
+        }
+
+        @keyframes circular{
+            0%{
+                top: 7em;
+                right: 2em
+            }
+
+            25%{
+                top: 7em;
+                right: 6em;
+            }
+
+            50%{
+                top: 14em;
+                right: 4em;
+            }
+
+            75%{
+                top: 10.5em;
+                right: 3em;
+            }
+            
+            100%{
+                top: 7em;
+                right: 2em
+            }
+        }
+    </style>
+    <div class="bola1"></div>
+    <div class="bola2"></div>
+    <div class="card">
+        <h1>Login</h1>
+        <div class="inter">
+            <center>
+                <input type="email" placeholder="Email" id="email">
+                <br>
+                <input type="password" placeholder="Senha" id="senha">
+                <br>
+                <button id="button">Confimar</button> 
+            </center>   
+        </div>
+    </div>
+    <script>
+        var email = document.getElementById('email');
+        var senha = document.getElementById('senha');
+        var bt = document.getElementById('button');
+
+        var intervalo = setInterval(function(){
+            var v_email = `${email.value}`;
+            if(v_email.includes('@') && v_email.includes('.') && !v_email.includes(' ') &&senha.value != ''){
+                bt.style.background = '#ff007a';
+                bt.style.color = 'white'
+                bt.addEventListener('click', function(){
+                    var v_email = `${email.value}`;
+                    if(v_email.includes('@') && v_email.includes('.') && !v_email.includes(' ') &&senha.value != ''){
+                        window.location.href = 'inity.html'
+                    }
+                });
+            }
+            else{
+                bt.style.background = '#d6d6d6';
+                bt.style.color = 'rgb(119, 119, 119)';
+            }
+        }, 2000)
+    </script>
+</body>
+</html>
